@@ -1,0 +1,193 @@
+{% extends "base.html" %}
+{% load static %}
+<title>Mahmoud Emad | Portfolio</title>
+
+{% block body %}
+{% for Message in messages %}
+    <div class="HereWeGo" role="alert">
+        <h4 class="WellDone">Well done!</h4>
+        <p>{{Message}}</p>
+        <hr>
+        <p class="SmallTexrt">When you need to contact, be sure I'm always here to hear</p>
+    </div>  
+{% endfor %}
+<section calss="s1">
+    <div class="main-container">
+        <div class="greeting-wrapper">
+            <h1>Hi, I'm Mahmoud Emad</h1> 
+        </div>
+        <div class="intro-wrapper">
+            <div class="nav-wrapper">
+
+                <!-- Link around dots-wrapper added after tutorial video -->
+                <a href="/">
+                    <div class="dots-wrapper">
+                        <div id="dot-1" class="browser-dot"></div>
+                        <div id="dot-2" class="browser-dot"></div>
+                        <div id="dot-3" class="browser-dot"></div>
+                    </div>
+                </a>
+                
+
+                <ul id="navigation">
+                    <li><a href="index.html#contact">Contact</a></li>
+
+                </ul>
+            </div>
+            <div class="left-column">
+                <img id="profile_pic" src="{% static 'images/me.jpg' %}">
+                <h5 style="text-align: center;line-height: 0;">Personalize Theme</h5>
+
+                <div id="theme-options-wrapper">
+                    <div data-mode="light" id="light-mode" class="theme-dot"></div>
+                    <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+                    <div data-mode="green" id="green-mode" class="theme-dot"></div>
+                    <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
+                </div>
+
+                <p id="settings-note">*Theme settings will be saved for<br>your next vist</p>
+            </div>
+
+            <div class="right-column">
+
+                <div id="preview-shadow">
+                    <div id="preview">
+                        <div id="corner-tl" class="corner"></div>
+                        <div id="corner-tr" class="corner"></div>
+                        <h3>What I Do</h3>
+                        <p>I do anything excited under the name programming</p>
+                        <div id="corner-br" class="corner"></div>
+                        <div id="corner-bl" class="corner"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section calss="s2">
+    <div class="main-container">
+        <div class="about-wrapper">
+            <div class="about-me">
+                <h4>More about me</h4>
+
+                <p>Mahmoud love to build new projects just to tickle his brain and love teaching others how they are made.</p>
+
+                <p>Mahmoud is an artist obsessed with the world of software, artificial intelligence and web development, interested in different fields and strives to continue learning until he becomes an old man</p>
+
+                <hr>
+                <h4>Career objective</h4>
+                <p>Seeking an opportunity to work as a software engineer, to obtain and secure a position that will enable me to use my organization skills as well as my ability to work well with people. I am a quick learner. I want to work in a suitable environment that would challenge my technical skills and give me direction</p>
+
+
+
+            </div>
+
+            
+            <div class="social-links">
+                <a target="_blank" href="https://github.com/Mahmoud-Emad"><img id="social_img" src="{% static 'images/git.png' %}"></a>
+                <a target="_blank" href="https://www.linkedin.com/in/mahmoud-emad-hossny-4aa53717a/">
+                    <img id="social_img" src="{% static 'images/link.webp' %}"></a>
+                <h3>Find me on Linkedin & Github</h3>
+                <hr>
+
+                <h4>TOP EXPERTISE</h4>
+
+                <p>Fullstack developer with primary focus on Django + React: <a target="_blank" href="{% static 'pdf/Mahmoud-Emad-Django.pdf' %}">Download Resume ->
+                        <img id="ResumePic" src="{% static 'images/resume.png' %}"> </a></p>
+
+                <div id="skills">
+                    <ul>
+                        <li>Python</li>
+                        <li>Django</li>
+                        <li>JavaScript</li>
+                        <li>React</li>
+                        <li>Postgres</li>
+                        <li>Docker</li>
+                        <li>Bootstrap</li>
+                        <li>SQL lite</li>
+                    </ul>
+
+                    <ul>
+                        <li>Google Maps API</li>
+                        <li>JS Charts</li>
+                        <li>AWS (RDS/S3)</li>
+                        <li>Heroku</li>
+                        <li>HTML/CSS</li>
+                        <li>Photoshop</li>
+                        <li>Git/Github</li>
+                        <li>SQL</li>
+                        
+                    </ul>
+
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+</section>
+<section calss="s1">
+    <div class="main-container">
+        <h3 style="text-align: center;">Some of my past projects</h3>
+
+        <div class="post-wrapper">
+
+            <div>
+                <div class="post">
+                    <img class="thumbnail" src="{% static 'images/1.png' %}">
+                    <div class="post-preview">
+                        <h6 class="post-title">Job Board - Target.com</h6>
+                        <p class="post-intro">Online Job Board with fillter all of jobs by name or keywords and guest user authantcated </p> 
+                        <a href="{% url 'Job' %}">Read More</a>
+                    </div>
+                </div>
+            </div>
+<!-- here you can add, remove, filtter, search and detail view for all of jobs -->
+            <div>
+                <div class="post">
+                    <img class="thumbnail" src="{% static 'images/test.png' %}">
+                    <div class="post-preview">
+                        <h6 class="post-title">Online Store - Flooop.com</h6>
+                        <p class="post-intro">Online store with paypal payments intergration and guest user shopping</p>
+                        <a href="{% url 'Ecom' %}">Read More</a>
+                    </div>
+                </div>
+            </div>
+<!-- more -->
+
+
+        </div>
+    </div>
+</section>
+<section calss="s2">
+    <div class="main-container">
+        <a href=""></a>
+        <h3 style="text-align: center;">Get In Touch</h3>
+
+        <form id="contact-form" method="POST">
+            <a name="contact"></a>
+
+            {% csrf_token %}
+            <label>Name</label>
+                {{form_contact.Name}}
+
+
+            <label>Subject</label>
+            {{form_contact.Subject}}
+
+            <label>Email</label>
+            {{form_contact.Email}}
+
+            <label>Message</label>
+            {{form_contact.Message}}
+
+            <input id="submit-btn" type="submit" value="Send">
+        </form>
+    </div>
+</section>
+<!-- 
+         -->
+
+
+{% endblock body %}
+	  

@@ -1,0 +1,109 @@
+{% extends "base.html" %}
+{% load static %}
+<title>Online Store - Flooop.com</title>
+
+
+{% block body %}
+	  
+
+<div class="nav-wrapper">
+
+	<!-- Link around dots-wrapper added after tutorial video -->
+	<a href="/">
+		<div class="dots-wrapper">
+			<div id="dot-1" class="browser-dot"></div>
+			<div id="dot-2" class="browser-dot"></div>
+			<div id="dot-3" class="browser-dot"></div>
+		</div>
+	</a>
+
+	<ul id="navigation">
+		<li><a href="/#contact">Contact</a></li>
+
+	</ul>
+</div>
+
+
+<div class="main-container">
+	<br>
+
+	<div class="img-container">
+		<img src="{% static 'images/test.png' %}">
+	</div>
+	
+	<a href="https://flooopy-eco.herokuapp.com/" target="_blank" style="display: inline-block;"><h3>Online Store - Flooop.com</h3></a>
+
+	<p>This was a project I started back in november 2019 when I first learned python. I was the sole creator/developer for the first year of the project before I was able to hire help.
+	<br>
+	<br>
+	It was a difficult challenge, this was my first project actually on the ground I have enumerated the front and back-end together
+	<br>
+	<br>
+	I was impressed by the idea of Amazon, then decided to develop a web application that simulates a part of Amazon Here you can view your product to sell You can also add </p>
+	<br>
+	<br>
+
+
+	<h5>Programming languages:</h5>
+	<ul>
+		<li>- Python</li>
+		<li>- Django</li>
+		<li>- JS</li>
+	</ul>
+	<h5>Design languages:</h5>
+	<ul>
+		<li>- Html</li>
+		<li>- Css</li>
+		<li>- Bootstrap</li>
+	</ul>
+	<h5>All Products</h5>
+	<div class="img-container">
+		<img src="{% static 'images/eco/9.png' %}">
+	</div>
+	<br>
+	<h5>Product Details</h5>
+	<div class="img-container">
+		<img src="{% static 'images/eco/3.png' %}">
+	</div>
+	<br>
+	<h5>Zoom in Photo</h5>
+	<div class="img-container">
+		<img src="{% static 'images/eco/7.png' %}">
+	</div>
+	<br>
+	<h5>Post Product</h5>
+	<div class="img-container">
+		<img src="{% static 'images/eco/6.png' %}">
+	</div>
+	<br>
+	<h5>Category Section </h5>
+	<div class="img-container">
+		<img src="{% static 'images/eco/10.png' %}">
+	</div>
+	<br>
+	<h5>Shoping Cart</h5>
+	<div class="img-container">
+		<img src="{% static 'images/eco/1.png' %}">
+	</div>
+	<br>
+	<h5>Customer Reviews</h5>
+	<div class="img-container">
+		<img src="{% static 'images/eco/2.png' %}">
+	</div>
+	<br>
+	<h5>User Profile</h5>
+	<div class="img-container">
+		<img src="{% static 'images/eco/profile.png' %}">
+	</div>
+	<br>
+	<h5>User authenticated</h5>
+	<div class="img-container">
+		<img src="{% static 'images/eco/8.png' %}">
+	</div>
+	<br>
+
+
+</div>
+
+
+{% endblock body %}

@@ -1,0 +1,58 @@
+
+:root{
+	--mainColor:#15202B;
+	--secondaryColor:#192734;
+
+	--borderColor:#164D56;
+
+	--mainText:#fff;
+	--secondaryText:#eeeeee;
+
+	--themeDotBorder:#FFF;
+
+	--previewBg:rgb(25, 39, 52, 0.8);
+	--previewShadow:#111921;
+
+
+	--buttonColor:#17a2b8;
+
+
+}
+html, body{
+	padding: 0;
+	margin: 0;
+	scroll-behavior: smooth;
+	background: #192734;
+}
+
+
+#social_img:hover{
+    transition: 0.5s;
+    background-color: var(--buttonColor);
+    border-radius: 100%;
+
+}
+#ResumePic{
+	width: 4%;
+    position: relative;
+    background: #17a2b8;
+}
+
+.SmallTexrt{
+	color: aquamarine;
+    font-family: auto;
+    position: relative;
+    bottom: 10px;
+}
+.WellDone{
+	position: relative;
+	top: 10px;
+}
+.HereWeGo{
+	border-radius: 40px;
+    position: relative;
+    left: 3%;
+    background: #164D56;
+	text-align: center;
+	width: 94%;
+}
